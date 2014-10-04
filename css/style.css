@@ -1,0 +1,199 @@
+html {
+   min-height: 100%
+}
+
+body {
+  background: -webkit-linear-gradient(top, #e2e2e2 0%, #dbdbdb 30%, #d1d1d1 51%, #fefefe 100%) no-repeat;
+  background: linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 30%,#d1d1d1 51%,#fefefe 100%) no-repeat;
+}
+
+#circle-1 {
+  width: 200px;
+  height: 200px;
+  background: whitesmoke;
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 15px 5px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  -webkit-animation: blur 10s infinite;
+          animation: blur 10s infinite;
+}
+
+#circle-2 {
+  width: 350px;
+  height: 350px;
+  background: whitesmoke;
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 15px 5px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  -webkit-animation: blur-2 10s infinite;
+          animation: blur-2 10s infinite;
+}
+
+#circle-3 {
+  width: 100px;
+  height: 100px;
+  background: whitesmoke;
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 15px 5px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 120px;
+  left: 500px;
+  -webkit-animation: blur-3 10s infinite;
+          animation: blur-3 10s infinite;
+}
+
+#circle-4 {
+  width: 200px;
+  height: 200px;
+  background: whitesmoke;
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 15px 5px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 150px;
+  left: 700px;
+  -webkit-animation: blur-4 10s infinite;
+          animation: blur-4 10s infinite;
+}
+
+@-webkit-keyframes blur {
+  0%,100%   {   -webkit-filter: blur(0px);   filter: blur(0px);
+                background-color: whitesmoke;
+                -webkit-transform: translate(50px,20px);
+                        transform: translate(50px,20px);
+  }
+  20%       {   -webkit-filter: blur(3px);   filter: blur(3px);}
+  50%       {   -webkit-filter: blur(15px);   filter: blur(15px);
+                background-color: #E8E8E8;
+                -webkit-transform: scale(.5);
+                        transform: scale(.5);
+
+  }
+}
+
+@keyframes blur {
+  0%,100%   {   -webkit-filter: blur(0px);   filter: blur(0px);
+                background-color: whitesmoke;
+                -webkit-transform: translate(50px,20px);
+                        transform: translate(50px,20px);
+  }
+  20%       {   -webkit-filter: blur(3px);   filter: blur(3px);}
+  50%       {   -webkit-filter: blur(15px);   filter: blur(15px);
+                background-color: #E8E8E8;
+                -webkit-transform: scale(.5);
+                        transform: scale(.5);
+
+  }
+}
+
+@-webkit-keyframes blur-2 {
+  0%,100% {
+           -webkit-filter: blur(16px);
+                   filter: blur(16px);
+           -webkit-transform: scale(.9);
+                   transform: scale(.9);
+           background-color: #E8E8E8;
+           -webkit-transform: translate(170px,-40px);
+                   transform: translate(170px,-40px);
+  }
+
+  50% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          -webkit-transform: scale(.7);
+                  transform: scale(.7);
+          background-color: whitesmoke;
+  }
+}
+
+@keyframes blur-2 {
+  0%,100% {
+           -webkit-filter: blur(16px);
+                   filter: blur(16px);
+           -webkit-transform: scale(.9);
+                   transform: scale(.9);
+           background-color: #E8E8E8;
+           -webkit-transform: translate(170px,-40px);
+                   transform: translate(170px,-40px);
+  }
+
+  50% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          -webkit-transform: scale(.7);
+                  transform: scale(.7);
+          background-color: whitesmoke;
+  }
+}
+
+@-webkit-keyframes blur-3 {
+  0%,100% {   -webkit-filter: blur(0px);   filter: blur(0px);
+              background-color: whitesmoke;
+              -webkit-transform: translate(-50px,20px);
+                      transform: translate(-50px,20px);
+  }
+  20% {       -webkit-filter: blur(1px);       filter: blur(1px);}
+  50% {       -webkit-filter: blur(3px);       filter: blur(3px);
+              -webkit-transform: scale(.7);
+                      transform: scale(.7);
+              background-color: #E8E8E8;
+  }
+}
+
+@keyframes blur-3 {
+  0%,100% {   -webkit-filter: blur(0px);   filter: blur(0px);
+              background-color: whitesmoke;
+              -webkit-transform: translate(-50px,20px);
+                      transform: translate(-50px,20px);
+  }
+  20% {       -webkit-filter: blur(1px);       filter: blur(1px);}
+  50% {       -webkit-filter: blur(3px);       filter: blur(3px);
+              -webkit-transform: scale(.7);
+                      transform: scale(.7);
+              background-color: #E8E8E8;
+  }
+}
+
+@-webkit-keyframes blur-4 {
+  0%,100%   {
+          -webkit-filter: blur(9px);
+                  filter: blur(9px);
+          -webkit-transform: scale(.5);
+                  transform: scale(.5);
+          background-color: #E8E8E8;
+
+  }
+
+  50% {   -webkit-filter: blur(0px);   filter: blur(0px);
+          -webkit-transform: scale(.9);
+                  transform: scale(.9);
+          background-color: whitesmoke;
+          -webkit-transform: translate(-50px,0);
+                  transform: translate(-50px,0);
+  }
+}
+
+@keyframes blur-4 {
+  0%,100%   {
+          -webkit-filter: blur(9px);
+                  filter: blur(9px);
+          -webkit-transform: scale(.5);
+                  transform: scale(.5);
+          background-color: #E8E8E8;
+
+  }
+
+  50% {   -webkit-filter: blur(0px);   filter: blur(0px);
+          -webkit-transform: scale(.9);
+                  transform: scale(.9);
+          background-color: whitesmoke;
+          -webkit-transform: translate(-50px,0);
+                  transform: translate(-50px,0);
+  }
+}
+
+
+
